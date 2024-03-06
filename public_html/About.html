@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;family=Playfair+Display&amp;family=Sawarabi+Mincho&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="AboutCSS.css"/>
+        <title>About Us | Corallium HK</title>
+        <link rel="icon" type="image/x-icon" href="logo1.png">
+    </head>
+    <body>
+        <!-- Menu -->
+        <div class="flex-container" id="menu">
+            <a class="underline_erasor" href="home">
+                <div id="logo" class="flex-container">
+                    <div style="width:50px;padding-top:10px;">
+                        <img src="logo2.png" width="50px" style="position:absolute;">
+                        <img id="top_logo" src="logo1.png" width="50px" style="position:absolute;">
+                    </div>
+                    <div class="flex-container" id="logo_words">
+                        <p id="logo_words1" style="font-size: 25px;transition:250ms;font-weight:100;">Corallium</p>
+                        <p id="logo_words2" style="font-size: 13px;transition:250ms;font-weight:400;padding-left: 5px;">Hong Kong, China</p>
+                    </div>
+                </div>
+            </a>
+            <div class="flex-container" id="menu_options">
+                <a class="underline_erasor" href="Coming_Soon">
+                    <div class="menu_op flex-container">
+                        <p id="donate">Donate</p>
+                    </div>
+                </a>
+                <a class="underline_erasor" href="About">
+                    <div class="menu_op flex-container">
+                        <p id="about">About&nbsp;Us</p>
+                    </div>
+                </a>
+                <a class="underline_erasor" href="Coming_Soon">
+                    <div class="menu_op flex-container">
+                        <p id="learn">Learn&nbsp;More</p>
+                    </div>
+                </a>
+            </div>
+            <div class="languagebutton">
+                <p id="language">
+                    Language
+                </p>
+                <div id="languagedropdown">
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Toggle -->
+        <span id="nav_toggle" style="user-select:none;font-size:50px;cursor:pointer;position:fixed;left:13px;top:71px;z-index:1000;transition:250ms;" onclick="toggleNav()"><p>
+            &#9776;
+        </p></span>
+        <!-- Navigation -->
+        <div class="flex-container" id="navigation">
+            <div id="menuhead">
+                <h3 style="font-size:30px;padding-top:10px;padding-bottom:10px;padding-left:71px;font-family: 'Source Sans Pro', sans-serif;">Menu</h3>
+            </div>
+            <a class="underline_erasor navele" href="#mission">
+                <div>
+                    <p style="font-size:20px;">Mission</p>
+                </div>
+            </a>
+            <a class="underline_erasor navele" href="#founder">
+                <div>
+                    <p style="font-size:20px;">Founders</p>
+                </div>
+            </a>
+            <a class="underline_erasor navele" href="#team">
+                <div>
+                    <p style="font-size:20px;">Team</p>
+                </div>
+            </a>
+        </div>
+        <div id="main" lang="English">
+            <!-- Body -->
+            <img id="aboutborder" src="Images/aboutborder.png">
+            <div class="flex-container" style="justify-content: center;">
+                <!-- Content -->
+                <div id="content">
+                    <!-- Header -->
+                    <div id="header" style="text-align:center;">
+                        <h1 id="aboutus" style="color:#EC8F44;font-weight:500;text-decoration-line:underline;text-underline-offset:6px;text-decoration-thickness: 2px;">About us</h1>
+                        <img id="aboutgroupphoto" src="Images/group.jpg">
+                        <p id="mission" class="photodsc" style="font-family: 'Source Sans Pro', sans-serif;">Corallium Team Group Photo (2022-2023)</p>
+                    </div>
+                    <!-- Mission -->
+                    <div class="section">
+                        <p class="title">What is Corallium?</p>
+                        <!-- <p class="sum"><bold style="font-size:30px;font-family: 'Playfair Display', serif;">“</bold> To promote the conservation of coral and marine environments. <bold style="font-size:30px;font-family: 'Playfair Display', serif;">”</bold></p> -->
+                        <p class="paragraph" style="font-size:19px;text-align:center;"><b>Corallium is a non-profit organization kickstarted and led by students of Yew Chung International School (YCIS).</b></p>
+                        <p class="paragraph" style="hyphens: auto;">We aim to practice and promote the ethical growth of corals to reduce the market share of illegally harvested coral, as well as reef conservation through collaboration with various external organizations. Our mission is to contribute constructively to the vulnerable reef <span id="founder">community</span> of Hong Kong and to promote the conservation of coral and marine environments on a local, and eventually national, and international scale.</p>
+                    </div>
+                    <!-- Founders -->
+                    <div class="section">
+                        <p class="title">Who Founded Corallium?</p>
+                        <!-- <div class="flex-container" style="justify-content:center;flex-direction:column;padding:40px;padding-bottom:0px;"> -->
+                            <p class="paragraph" style="font-size:19px;text-align:center;"><b>Corallium was the brainchild and vision of Hiroto Maekawa and Aowyn Lam, secondary students from Yew Chung International School (YCIS).</b></p>
+                        <p class="paragraph" style="hyphens: auto;"> Our founders’ passion for all things marine and earnest concern for the one-of-a-kind marine ecosystems within their local community bade them to form Corallium in conjunction with a group of like-minded peers (see <a style="color:#106395;" href="#team">Our Team</a> below). As avid divers, Hiroto and Aowyn are acutely aware of the need to cherish and preserve Hong Kong’s vulnerable reef ecosystems. Currently comprised of a team of <span id="team">students</span> with diverse skills and talents, Corallium hopes to become a local, national, and even global initiative for marine ecological conservation and achieve its founders’ vision. </p>
+                        <!-- </div> -->
+                    </div>
+                    <!-- Team -->
+                    <p class="title" style="padding-top:40px;padding-bottom:10px;">Our Team</p>
+                    <div class="flex-container" style="flex-wrap:wrap;justify-content:space-evenly;padding-bottom:10px;">
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/hiroto.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Hiroto Maekawa</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position(s):</b> Project&nbsp;Leader / Tank&nbsp;Leadership</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Primary Spokesperson</li>
+                                        <li>Meetings Leader</li>
+                                        <li>Tank Maintenance Leader</li>
+                                        <li>Coral Maintenance Research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/aowyn.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Aowyn Lam</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position(s):</b> Project&nbsp;Leader / Tank&nbsp;Leadership</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Tank Maintenance Leader</li>
+                                        <li>Coral Maintenance Research</li>
+                                        <li>Logo Design</li>
+                                        <li>Fundraising</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/johnson.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Johnson Zhong</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position(s):</b> General&nbsp;Secretary / Web&nbsp;Developer</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Promotion and Fundraising Manager</li>
+                                        <li>Principal Administrator</li>
+                                        <li>Meetings Leader</li>
+                                        <li>Website Developer</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/sof.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Sof Nazareno</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position:</b> Accountant</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Records Monetary Expenses</li>
+                                        <li>Meetings Leader</li>
+                                        <li>Tank Maintenance</li>
+                                        <li>Fundraising</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/ruben.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Ruben Tam</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position(s): </b>Writer / Communications </p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Primary Writer</li>
+                                        <li>Digital Correspondence</li>
+                                        <li>Fundraising Organiser</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/owen.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Owen Hsu</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position:</b> Communications</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Digital Correspondence</li>
+                                        <li>Tank Maintenence</li>
+                                        <li>Fundraising Organiser</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/ryan.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Ryan Zhou</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position(s):</b> Tank&nbsp;Maintenance / Cameraman</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Tank Maintenance</li>
+                                        <li>Documents Project Progress</li>
+                                        <li>Fundraising</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/tiffany.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Tiffany Li</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position:</b> Main Designer</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Website Design</li>
+                                        <li>Logo Design</li>
+                                        <li>Fundraiser</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/kyle.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Kyle Ling</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position:</b> Tank Maintenance</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Tank Maintenance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/matthew.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Matthew Lam</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position:</b> Web Developer</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Website Developer</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-container profile_div">
+                            <div class="profile flex-container">
+                                <div class="ppic flex-container">
+                                    <img class="circle pics" src="Images/terrence.png">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif;font-size:20px;"> <b>Terrence Xu</b></p>
+                                </div>
+                                <div class="flex-container description">
+                                    <p class="paragraph" style="padding:0px;padding-bottom: 10px;"><b>Position:</b> Video Editor</p>
+                                    <p class="paragraph" style="padding:0px;"><b>Roles:</b></p>
+                                    <ul style="font-family: 'Source Sans Pro', sans-serif;">
+                                        <li>Video Editing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Social Media -->
+        <div class="flex-container" id="social" style="z-index:1002;justify-content: space-between;">
+            <!-- <p style="font-size:15px;">Corallium is a 100% student-operated non-profit initiative. Please <a class="underline_erasor" style="color:skyblue;" href="Donate.html">donate</a> to financially support Corallium. </p> -->
+            <!-- <div class="flex-container" style="justify-content: space-between;align-items: flex-end;"> -->
+                <div class="flex-container" style="justify-content:space-between;flex-direction: column;">
+                    <p style="font-size:15px;font-family: 'Source Sans Pro', sans-serif;">Corallium is a <u>100% student-operated non-profit</u> initiative. Please <a class="underline_erasor" style="color:#106395;" href="Coming_Soon">donate</a> to financially support Corallium. </p>
+                    <!-- <h1 style="font-size:20px;"><b>Contacts: </b></h1> -->
+                    <!-- contacts: gmail, phone number, youtube, facebook, instagram -->
+                    <div class="flex-container" id="contacts" style="align-items:flex-end;">
+                        <a class="underline_erasor" href="mailto:corallium.hk@gmail.com" target=”_blank”><div id="gmail_div">
+                            <img id="gmail" src="Images/gmail.png"/>
+                        </div></a>
+                        <a class="underline_erasor" href="mailto:corallium.hk@gmail.com" target=”_blank”><div id="phone_div">
+                            <img id="phone" src="Images/phone.png"/>
+                        </div></a>
+                        <a class="underline_erasor" href="https://www.youtube.com/channel/UCKuHHY1B3G1RjCQDJXCl8LA" target=”_blank”><div id="youtube_div">
+                            <img id="youtube" src="Images/youtube.png"/>
+                        </div></a>
+                        <a class="underline_erasor" href="mailto:corallium.hk@gmail.com" target=”_blank”><div id="facebook_div">
+                            <img id="facebook" src="Images/facebook.png"/>
+                        </div></a>
+                        <a class="underline_erasor" href="https://www.instagram.com/coralliumhk/" target=”_blank”><div id="instagram_div">
+                            <img id="instagram" src="Images/instagram.png"/>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="flex-container" id="credits" style="flex-direction:column;justify-content:space-between;">
+                    <p style="font-size:20px;text-align: right;font-family: 'Source Sans Pro', sans-serif;"><b><u>Webpage Creators</u></b></p>
+                    <p style="font-size:15px;text-align: right;padding-top:3.25px;padding-bottom:3.25px;font-family: 'Source Sans Pro', sans-serif;"><b>Main Developer</b>: Johnson Zhong</p>
+                    <p style="font-size:15px;text-align: right;padding-top:3.25px;padding-bottom:3.25px;font-family: 'Source Sans Pro', sans-serif;"><b>Designers</b>: Aowyn Lam, Matthew Lam, Tiffany Li, Johnson Zhong</p>
+                </div>
+            <!-- </div> -->
+        </div>
+        <script src="AboutJS.js"></script>
+    </body>
+</html>

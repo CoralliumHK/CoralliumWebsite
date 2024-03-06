@@ -1,0 +1,300 @@
+/* *{
+    margin:0px;
+} */
+body{margin:0px;}
+p{margin:0px;}
+h1{margin:0px;}
+h2{margin:0px;}
+h3{margin:0px;}
+h4{margin:0px;}
+h5{margin:0px;}
+h6{margin:0px;}
+/* body{
+    background:skyblue;
+} */
+.flex-container{
+    display:flex;
+}
+#menu{
+    z-index: 100;
+    position:fixed;
+    top:0px;
+    height:70px;
+    width:100%;
+    background-color: rgba(255,255,255,0.5);
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    border-bottom:1px black solid;
+    overflow:visible;
+}
+#heading{
+    min-height:100vh;
+    background-color: rgb(135, 206, 235);
+    color:black;
+    align-items: center;
+    justify-content:center;
+    font-family: 'Playfair Display', serif;
+}
+#logo{
+    padding-left:10px;
+    padding-right:10px;
+    height:70px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition:250ms;
+}
+#logo_words{
+    flex-direction: column;
+    transition:250ms;
+    padding-top:7px;
+    color:black;
+    font-family: 'Playfair Display', serif;
+}
+#menu_options{
+    justify-content: flex-start;
+    width:100%;
+}
+/* #donate{
+    font-size:25px;
+    padding-top:18.25px!important;
+    padding-bottom:18.25px!important;
+    color:rgb(181,42,91);
+}
+#donate:hover{
+    color:skyblue!important;
+} */
+.menu_op{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding-left:17.5px;
+    padding-right:17.5px;
+    padding-top:25px;
+    padding-bottom:25px;
+    align-self:center;
+    transition: 250ms;
+    color:black;
+}
+.menu_op:hover{
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    background-color: #b52a5b;
+    color:white;
+}
+#top_logo{
+    transition:250ms;
+}
+.toplogohovered{
+    /* hovering property added in javascript */
+    opacity: 0% !important;
+}
+.logowordhovered{
+    /* hovering property added in javascript */
+    color:white !important;
+}
+.logohovered{
+    /* hovering property added in javascript */
+    border-left: 1px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    background-color: rgb(181, 42, 91) !important;
+}
+#language{
+    border-right: 1px solid transparent;
+    border-bottom:1px solid transparent;
+    padding-left:17.5px;
+    padding-right:17.5px;
+    padding-top:25px;
+    padding-bottom:25px;
+    align-self:center;
+    transition: 250ms;
+}
+#language:hover{
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid black;
+    background-color: rgb(181,42,91);
+    color:white;
+}
+#social{
+    height:auto;
+    background-color: rgb(181,42,91);
+    border-top: 1px solid black;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    justify-content: space-between;
+    font-size:12px;
+    padding:30px;
+}
+#butt1{
+    background:transparent;
+    height:50px;
+    width:100px;
+    color:rgb(181,42,91);
+    justify-content: center;
+    border:rgb(181,42,91) 1px solid;
+    margin-top: 20px;
+    transition: 250ms;
+}
+#butt1:hover{
+    background: rgb(181,42,91);
+    color:white;
+    border:white 1px solid;
+}
+#wavy_bottom{
+    position:absolute;
+    top:calc(100vh - 250px);
+    width:100%;
+    height:250px;
+}
+#coralbackground{
+    position:absolute;
+    bottom:-1px;
+    width:100%;
+    height:500px;
+}
+#contacts > a > div > img{
+    width:50px;
+    padding-right:10px;
+    transition:250ms;
+}
+#gmail_div:hover #gmail{width:55px;padding-right:5px;}
+#phone_div:hover #phone{width:55px;padding-right:5px;}
+#youtube_div:hover #youtube{width:55px;padding-right:5px;}
+#facebook_div:hover #facebook{width:55px;padding-right:5px;}
+#instagram_div:hover #instagram{width:55px;padding-right:5px;}
+.languagedropdown {
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.5);
+    width: auto;
+    height: 0px;
+    z-index: 1000;
+    transition-duration:250ms;
+}
+.languagebutton {
+    position: relative;
+    display: inline-block;
+}
+.languagedropdown > p{
+    text-align:center;
+    color:black;
+    padding-top:5px;
+    padding-bottom:5px;
+    transition:250ms;
+}
+.languagebutton:hover .languagedropdown {
+    height:31.6px;
+}
+.languagedropdown > p:hover{
+    background-color: rgb(181,42,91);
+    color:white;
+}
+#photo{
+    height:77vh;
+    justify-content: center;
+    align-items: center;
+}
+#current_photoframe{
+    background-color:white; 
+    border: 10px solid rgb(181,42,91);
+    width: 50%;
+    height: calc(50vw / 7 * 4);
+    overflow:hidden;
+    align-items: center;
+}
+#current_photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+#p_photobutton{
+    margin: 10px;
+    font-size:50px;
+    user-select:none;
+}
+#n_photobutton{
+    margin: 10px;
+    font-size:50px;
+    user-select:none;
+}
+img{
+    pointer-events:none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#maintitle{
+    font-size:100px;
+    color: rgb(181,42,91);
+    font-weight:800;
+    z-index:80;
+    text-align:center;
+}
+#maindesc{
+    font-size:25px;
+}
+@media screen and (orientation:portrait){
+    /* Adjustments for every webpage */
+    #main{
+        border-left:0 solid #106395;
+        border-right:0 solid #106395;
+    }
+    #content{
+        width:100%;
+        padding:0px;
+    }
+    #social{
+        flex-direction:column;
+        height:auto;
+    }
+    #menu{
+        overflow:scroll;
+    }
+
+    /* Adjustments for main page ONLY */
+    #photo{
+        height:50vh;
+    }
+    #current_photoframe{
+        border: 5px solid rgb(181,42,91);
+        width: 80%;
+        height: calc(80vw / 7 * 4);
+    }
+    #p_photobutton{
+        font-size:30px;
+    }
+    #n_photobutton{
+        font-size:30px;
+    }
+}
+@media screen and (max-width: 500px){
+    /* Adjustments for main page ONLY */
+    #maintitle{
+        font-size:60px;
+    }
+    #maindesc{
+        font-size:20px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    /* Adjustments for every webpage */
+    #contacts > a > div > img{
+        width:30px;
+        padding-right:5px;
+    }
+    .profile_div{
+        min-width:280px;
+    }
+    .description > p{
+        font-size:10px;
+    }
+    .description > ul{
+        font-size:10px;
+    }
+}
+
+.underline_erasor:link { text-decoration: none; }
+.underline_erasor:visited { text-decoration: none; }
+.underline_erasor:hover { text-decoration: none; }
+.underline_erasor:active { text-decoration: none; }

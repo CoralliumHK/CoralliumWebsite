@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="utf-8"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;family=Playfair+Display&amp;family=Sawarabi+Mincho&amp;display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="HomeCSS.css">
+        <title>Corallium</title>
+        <link rel="icon" type="image/x-icon" href="logo1.png">
+    </head>
+    <body>
+        <!-- Menu -->
+        <div class="flex-container" id="menu">
+            <a class="underline_erasor" href="/">
+                <div id="logo" class="flex-container">
+                    <div style="width:50px;padding-top:10px;">
+                        <img src="logo2.png" width="50px" style="position:absolute;">
+                        <img id="top_logo" src="logo1.png" width="50px" style="position:absolute;">
+                    </div>
+                    <div class="flex-container" id="logo_words">
+                        <p id="logo_words1" style="font-size: 25px;transition:250ms;font-weight:100;">Corallium</p>
+                        <p id="logo_words2" style="font-size: 13px;transition:250ms;font-weight:400;padding-left: 5px;">Hong Kong, China</p>
+                    </div>
+                </div>
+            </a>
+            <div class="flex-container" id="menu_options">
+                <a class="underline_erasor" href="Coming_Soon.html">
+                    <div class="menu_op flex-container">
+                        <p id="donate">Donate</p>
+                    </div>
+                </a>
+                <a class="underline_erasor" href="About.html">
+                    <div class="menu_op flex-container">
+                        <p id="about">About Us</p>
+                    </div>
+                </a>
+                <a class="underline_erasor" href="Coming_Soon.html">
+                    <div class="menu_op flex-container">
+                        <p id="learn">Learn More</p>
+                    </div>
+                </a>
+            </div>
+            <div class="languagebutton">
+                <p id="language">
+                    Language
+                </p>
+                <div class="languagedropdown">
+                    <p>English</p>
+                    <p style="font-family: 'Noto Serif SC', serif;">中文</p>
+                    <p style="font-family: 'Sawarabi Mincho', serif;">日本語</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container" id="heading" style="flex-direction: column;">
+            <!-- Heading Section -->
+            <h1 style="font-size:100px;color: rgb(181,42,91);font-weight:800;z-index:80;">Corallium</h1>
+            <p style="font-size:25px;z-index:80;">A movement to make an impact. </p>
+            <a class="underline_erasor" style="z-index:80;" href="About.html">
+                <div id="butt1" class="flex-container">
+                    <p style="align-self:center;font-weight:900;">About Us</p>
+                </div>
+            </a>
+            <div id="coralbackground" style="width:100%;bottom:0px;">
+                <img style="width:100%;position:absolute;bottom:0px;" src="Orange.svg">
+                <img style="width:100%;position:absolute;bottom:0px;" src="Red.svg">
+                <img style="width:100%;position:absolute;bottom:0px;" src="Yellow.svg">
+                <img style="width:100%;position:absolute;bottom:0px;" src="Purple.svg">
+            </div>
+            <div id="wavy_bottom">
+                <img style="position:absolute;bottom:-1px;" src="svgviewer-output.svg">
+            </div>
+        </div>
+        <div class="flex-container" id="leaderboard">
+            <!-- Leaderboard -->
+            
+        </div>
+        <div class="flex-container" id="photo">
+            <!-- Photo Gallery -->
+            <div id="p_photobutton" onclick="previous_photo()">
+                
+            </div>
+            <div id="current_photoframe">
+                <img id="current_photo" src="">
+            </div>
+            <div id="n_photobutton" onclick="next_photo()">
+
+            </div>
+        </div>
+        <div class="flex-container" id="social" style="z-index:1002;justify-content: space-between;">
+            <!-- <p style="font-size:15px;">Corallium is a 100% student-operated non-profit initiative. Please <a class="underline_erasor" style="color:skyblue;" href="Donate.html">donate</a> to financially support Corallium. </p> -->
+            <!-- <div class="flex-container" style="justify-content: space-between;align-items: flex-end;"> -->
+                <div class="flex-container" style="justify-content:space-between;flex-direction: column;">
+                    <p style="font-size:15px;font-family: 'Source Sans Pro', sans-serif;">Corallium is a <u>100% student-operated non-profit</u> initiative. Please <a class="underline_erasor" style="color:skyblue;" href="Coming_Soon.html">donate</a> to financially support Corallium. </p>
+                    <!-- <h1 style="font-size:20px;"><b>Contacts: </b></h1> -->
+                    <!-- contacts: gmail, phone number, youtube, facebook, instagram -->
+                    <div id="contacts">
+                        <img id="gmail" src="Images/gmail.png">
+                        <img id="phone" src="Images/phone.png">
+                        <img id="youtube" src="Images/youtube.png">
+                        <img id="facebook" src="Images/facebook.png">
+                        <img id="instagram" src="Images/instagram.png">
+                    </div>
+                </div>
+                <div class="flex-container" id="credits" style="flex-direction:column;justify-content:space-between;">
+                    <p style="font-size:20px;text-align: right;font-family: 'Source Sans Pro', sans-serif;"><b><u>Website Creators</u></b></p>
+                    <p style="font-size:15px;text-align: right;padding-top:3.25px;padding-bottom:3.25px;font-family: 'Source Sans Pro', sans-serif;"><b>Developers</b>: Matthew Lam, Johnson Zhong</p>
+                    <p style="font-size:15px;text-align: right;padding-top:3.25px;padding-bottom:3.25px;font-family: 'Source Sans Pro', sans-serif;"><b>Designers</b>: Aowyn Lam, Matthew Lam, Tiffany Li, Johnson Zhong</p>
+                </div>
+            <!-- </div> -->
+        </div>
+        <script src="HomeJS.js"></script>
+    </body>
+</html>
